@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities.Notifications;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -7,7 +8,7 @@ using System.Text;
 namespace Entities.Entities
 {
     [Table("Product")]
-    public  class Produto
+    public  class Produto : Notifies
     {
         [Column("PRD_ID")]
         [Display(Name = "Código")]
