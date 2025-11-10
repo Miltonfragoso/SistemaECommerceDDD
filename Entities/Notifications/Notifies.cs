@@ -7,11 +7,14 @@ namespace Entities.Notifications
 {
     public class Notifies
     {
+        //construtor
         public Notifies()
         {
             Notitycoes = new List<Notifies>();
         }
 
+
+        //Propriedades
         [NotMapped]
         public string  NomePropriedade { get; set; }
 
@@ -22,6 +25,7 @@ namespace Entities.Notifications
         public List<Notifies> Notitycoes;
 
 
+        //Métodos
         public bool ValidarPropriedadeString(string valor, string nomePropriedade)
         {
             if (string.IsNullOrWhiteSpace(valor) || string.IsNullOrWhiteSpace(nomePropriedade))

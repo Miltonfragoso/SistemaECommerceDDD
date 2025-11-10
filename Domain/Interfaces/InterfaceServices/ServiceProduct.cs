@@ -7,14 +7,17 @@ using System.Threading.Tasks;
 
 namespace Domain.Interfaces.InterfaceServices
 {
-    public class ServiceProduct : IServiceProdutct
+    public class ServiceProduct : IServiceProduct
     {
+        //Construtor com ijeção de dependência  para trazer os métodos genéricos do IProduct
         private readonly IProduct _IProduct;
 
         public ServiceProduct(IProduct IProduct)
         {
             _IProduct = IProduct;
         }
+
+        //Implementando as regras de negócio para o serviço de Produto
         public async Task AddProduct(Produto produto)
         {
             var validaNome = produto.ValidarPropriedadeString(produto.Nome, "Nome");

@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <None Remove="Interfaces\Generics\IGeneric.cs~RF1ffded1.TMP" />
+    <None Remove="Interfaces\InterfaceServices\IServiceProduct.cs~RF125f0f6.TMP" />
   </ItemGroup>
 
   <ItemGroup>
